@@ -9,23 +9,43 @@ A simple web application that retrieves data from the Growatt API and displays i
 - Auto-refresh with rate limiting (respects API limits)
 - Clean, responsive dashboard design
 
-## Setup
+## Prerequisites
 
-1. Install dependencies:
+Before you begin, ensure you have the following installed on your system:
+
+- **Node.js** (version 14.x or higher)
+  - Download from [nodejs.org](https://nodejs.org/)
+  - Verify installation: `node --version`
+- **npm** (version 6.x or higher)
+  - Comes bundled with Node.js
+  - Verify installation: `npm --version`
+- **Growatt API Token**
+  - Required to access the Growatt API
+  - Obtain from your Growatt account
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd growatt-app
+```
+
+2. Install dependencies:
 ```bash
 npm install
 ```
 
-2. Configure your API token:
+3. Configure your API token:
    - Copy `.env.example` to `.env`
    - Add your Growatt API token to `.env`
 
-3. Start the server:
+4. Start the server:
 ```bash
 npm start
 ```
 
-4. Open your browser and navigate to:
+5. Open your browser and navigate to:
 ```
 http://localhost:3000
 ```
